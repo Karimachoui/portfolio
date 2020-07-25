@@ -1,0 +1,45 @@
+
+  
+.contener{
+    overflow: hidden;
+    width: 60%;
+    height: 600px;
+    display: grid;
+    margin: 150px auto 0;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+}
+  
+.contener__nav{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    a{
+        height: 200px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
+
+.contener__nav a img{
+    display: block;
+    max-width: 100%;
+}
+
+.nav__img{
+    object-fit: cover;
+    filter: saturate(0);
+    transition: 0.3s ease all;
+}
+
+.gallery{
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    .gallery__img{
+        scroll-snap-align: start;
+        margin-bottom: 10px;
+        min-height: 800px;
+        object-fit: cover;
+    }
+}
+  

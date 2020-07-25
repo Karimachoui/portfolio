@@ -1,0 +1,54 @@
+/*---PARTIE-HAUTE---*/
+
+.header--color{
+    background: linear-gradient( rgb(94, 209, 238), rgb(202, 224, 250) 60%);
+}
+
+#header__heading{
+    display: flex;
+    flex-direction: column;
+    #heading__top{
+        z-index: 100;
+        display: grid;
+        position: fixed;
+        width: 100%;
+        grid-template-columns: (25% 15% 60%);
+        background-color: rgb(0, 0, 0);
+        height: 70px;
+    }
+}
+
+#heading__logo{
+    grid-column: 1;
+    margin: auto;
+    p{
+        color: white;
+    }
+}
+
+/*---PARTIE-BASSE---*/
+
+.heading__bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: (10% 30% 60%);
+    margin: 130px auto 60px;
+    .bottom__photo{
+        grid-column: 2;
+    }
+}
+
+.bottom__prez{
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    scale: (1);
+    transition: transform 300ms;
+    .prez__hello{
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(53, 51, 51);
+    }
+}

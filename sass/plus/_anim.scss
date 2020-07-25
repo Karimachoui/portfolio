@@ -1,0 +1,68 @@
+/*---MENU---*/
+
+a:hover{
+    border-bottom: solid 4px #3db8e9;
+    width: auto;
+}
+
+/*---PHOTO---*/
+
+.photo__emoji{
+    width: 348px;
+    height: 248px;
+    border: solid 2px black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    figcaption{
+        position: absolute;
+        width: 326px;
+        height: 233px;
+        bottom: -100%;
+        left: 12px;
+        transition-property: bottom;
+        transition-duration: 300ms;
+    }
+}
+
+.photo__emoji:hover figcaption{
+    bottom: 0;
+}
+
+/*---TEXTE---*/
+
+.bottom__prez{
+    scale: (1);
+    transition: transform 300ms;
+    
+}
+
+.bottom__prez:hover{
+    transform: scale(1.25);
+}
+
+/*---SKILLS---*/
+
+.skills--technique:hover{
+    opacity: 0.5;
+}
+
+.skills--human:hover{
+    opacity: 0.5;
+}
+
+.skills--human-s:hover{
+    opacity: 0.5;
+}
+
+/*---FORMULAIRE---*/
+
+input[type=submit]:hover{
+    color: #8b8989;
+    background: rgb(255, 0, 0);
+    border:solid 4px #aaa7a7;
+}
+
+#formulaire:hover{
+    border: solid 7px rgb(255, 0, 0);
+}

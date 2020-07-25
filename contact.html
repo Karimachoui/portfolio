@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./sass/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les réalisation de MLD</title>
+</head>
+<body>
+
+    <header id="header__heading">
+
+        <div id="heading__top">
+
+            <div id="heading__logo">
+            
+                <p>LOGO</p>
+            
+            </div>
+    
+            <ul id="heading__menu">
+    
+                    <li class="menu__line"><a href="index.html">Accueil</a></li>
+                    <li class="menu__line"><a href="skills.html">Compétences</a></li>
+                    <li class="menu__line"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="menu__line"><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="heading__bottom">
+
+            <div class="bottom__photo">
+
+                <figure class="photo__emoji">
+                    
+                    <img src="img/pile.jpg">
+                        
+                    <figcaption>
+                            
+                        <img src="img/face.jpg">
+                        
+                    </figcaption>
+                    
+                </figure>
+
+            </div>
+
+            <div class="bottom__prez">
+
+                <p class="prez__hello">Bonjour,  je m'appelle Karim et je suis <h1 class="prez__title">Développeur Freelance</h1></p>
+                
+                
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <form id="formulaire" action="post__contact.php" novalidate success-msg="Message envoyé avec succès" fail-msg="Oups ! Il semblerait que nous rencontrons un soucis avec le serveur, Navré pour le contre-temps, veuillez réessayer ultérieurement.">
+                
+            <h2 class="form__title">Me Contacter</h2>
+            <div class="form__name"><br>MLD</div>
+            <div class="form__tel">Tél : 07 xx xx xx xx</div>
+            <i>Tous les champs sont obligatoires</i>
+
+            <label for="inputemail">Votre Nom</label>
+            <input type="text" name="name" class="table__form" id="name" placeholder="Nom">
+            
+            <label for="inputemail">Votre Email</label>
+            <input type="text" name="email" class="table__form" id="email" placeholder="E-mail">
+            
+            <label for="inputemail">Comment m'avez-vous connu ?</label>
+            <input type="text" name="subject" class="table__form" id="input_504" placeholder="question">
+
+            <label for="inputemail">Votre Message</label>
+            <textarea name="message" class="table__form" id="message" placeholder="Message"></textarea>
+
+            <input type="submit" name="envoyer" value="Envoyer le message">
+
+        </form>
+
+    </main>
+    
+</body>
+</html>

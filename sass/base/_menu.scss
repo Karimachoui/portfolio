@@ -1,0 +1,21 @@
+#heading__menu{   
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    grid-column: 3;
+    .menu__line{
+        width: auto;
+        display: flex;
+        margin: auto;
+        a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-right: 30px;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: bold;  
+        }        
+    }
+}
+
